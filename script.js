@@ -9,7 +9,10 @@ function isAnagram (){
   var t = document.getElementById('word2').value;
   s = s.toUpperCase().split('').sort().join('');
   t = t.toUpperCase().split('').sort().join('');
- if(s===t) {
+if(s==='' && t===''){
+result.innerHTML = 'string is empty';
+}
+ else if(s===t) {
       result.innerHTML = "Strings is anagrams.";
     }
     else{
